@@ -4,7 +4,7 @@ A real-time pitch shifting application with ultra-low latency, designed for home
 
 ## Why This Project?
 
-This project was created to enhance the home karaoke experience by leveraging **Apple Music Sing on Apple TV**, which uses AI to remove vocals in real-time. The goal is to provide seamless key control through a nice UI accessible from Apple TV, while integrating professional audio equipment for superior sound quality.
+This project was created to enhance the home karaoke experience by leveraging **Apple Music Sing on Apple TV**, which uses AI to remove vocals in real-time. The goal is to provide key change control through UI that is accessible, while integrating personal audio equipment for better sound quality.
 
 ### The Complete Setup
 
