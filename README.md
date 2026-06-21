@@ -10,7 +10,7 @@ This project was created to enhance the home karaoke experience by leveraging **
 
 The system combines:
 
-- **Apple Music Sing**: AI-powered real-time vocal removal on Apple TV
+- **Apple Music**: Music source on Apple TV
 - **Computer** that runs **take-it-easy**: Real-time pitch shifting with ultra-low latency
 - **Yamaha MG06X Mixing Console**: Professional audio mixing with reverb for microphones
 - **SSS1700C1 USB Sound Card**: Digital audio interface with TOSLINK support
