@@ -1,4 +1,4 @@
-# pitch-shifter
+# take-it-easy
 
 A real-time pitch shifting application with ultra-low latency, designed for home karaoke use. Features a clean web interface to control pitch shifting from your microphone input stream.
 
