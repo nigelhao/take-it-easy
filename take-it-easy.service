@@ -1,0 +1,19 @@
+# /home/xxx/.config/systemd
+/user/take-it-easy.service
+[Unit]
+Description=Project Take it Easy
+After=pipewire.service wireplumber.service
+Requires=pipewire.service
+
+[Service]
+Environment="BIND_ADDR=0.0.0.0:8080"
+Environment="STATIC_DIR=%h/take-it-easy/static"
+ExecStart=/usr/bin/pw-jack %h/take-it-easy/target/release/take-it-easy
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
+
+# systemctl --user daemon-reload
+# systemctl --user restart take-it-easy.service
