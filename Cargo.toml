@@ -1,0 +1,22 @@
+[package]
+name = "pitch-shifter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jack = "0.13"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "signal", "sync"] }
+axum = { version = "0.7", features = ["ws"] }
+tower-http = { version = "0.5", features = ["fs"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow = "1"
+futures-util = "0.3"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
