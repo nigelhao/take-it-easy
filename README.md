@@ -6,20 +6,22 @@ A real-time pitch shifting application with ultra-low latency, designed for home
 
 This project was created to enhance the home karaoke experience by leveraging **Apple Music Sing on Apple TV**, which uses AI to remove vocals in real-time. The goal is to provide key change control through UI that is accessible, while integrating personal audio equipment for better sound quality.
 
-### The Complete Setup
+### My Complete Setup
 
 The system combines:
 
-- **Apple Music**: Music source on Apple TV
-- **Computer** that runs **take-it-easy**: Real-time pitch shifting with ultra-low latency
-- **Yamaha MG06X Mixing Console**: Professional audio mixing with reverb for microphones
-- **SSS1700C1 USB Sound Card**: Digital audio interface with TOSLINK support
+- **Apple TV 4K** — Media source running Apple Music Sing
+- **Computer running take-it-easy** — Real-time pitch shifting with ultra-low latency
+- **SSS1700C1 USB Sound Card** — USB audio interface with TOSLINK input/output
+- **S.M.S.L SU-1** — TOSLINK DAC for optical-to-analog conversion
+- **Yamaha MG06X** — Mixing console with built-in reverb for microphones
+- **Fosi Audio TB10D** — Power amplifier
 
 This setup allows singers to:
 
-1. Choose any song on Apple TV with vocal removal
+1. Choose any song on Apple TV
 2. Adjust the key to match their vocal range via the web UI
-3. Mix their microphone input with professional reverb effects
+3. Mix their microphone input with reverb effects
 4. Enjoy studio-quality audio output through speakers
 
 ### Audio Signal Flow
@@ -44,9 +46,9 @@ Host running take-it-easy
     │
     │ USB (Digital Audio Output)
     ▼
-SSS1700C1 USB Sound Card (connected to same host)
+SSS1700C1 USB Sound Card (connected to host)
     │
-    │ TOSLINK (Digital Audio)
+    │ TOSLINK (Digital Audio) ← optional, see note below
     ▼
 TOSLINK-supported DAC
     │
@@ -61,6 +63,8 @@ Amplifier
     ▼
 Speakers
 ```
+
+> **Why TOSLINK out instead of USB direct to DAC?** _(Optional step)_ The host can output directly to the DAC via USB, but routing back through the sound card's TOSLINK provides optical isolation that eliminates electrical interference from the computer. Skip this step if interference is not a concern.
 
 **Key Benefits:**
 
